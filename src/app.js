@@ -34,5 +34,8 @@ function randomCard() {
   symbolDown.textContent = randomSimbolos;
   number.textContent = randomNumeros;
 }
+setInterval(randomCard, 10000);
+
+document.getElementById("generateCard").addEventListener("click", randomCard);
 
 window.onload = randomCard();
